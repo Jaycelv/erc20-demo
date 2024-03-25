@@ -12,7 +12,7 @@ async function main() {
 
   await token.waitForDeployment();
 
-  console.log("Token address:", token.address);
+  console.log("Token address:", token.target);
 }
 
 main()

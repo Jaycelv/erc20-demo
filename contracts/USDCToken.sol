@@ -6,8 +6,8 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 contract USDCToken is ERC20, Ownable {
     address public manager;
 
-    constructor() ERC20("USDC", "USDC") Ownable(msg.sender) {
-        _mint(0x0800406eD099daC10394b820Dab0c2677fd9C046, 1 * 10**decimals()); // 发行1个token给部署者，考虑了小数位
+    constructor() ERC20("AAA", "AAA") Ownable(msg.sender) {
+        _mint(0xe51555A2Cd2268D64D20f91DcDbE156B9D63D57a, 1 * 10**decimals()); // 发行1个token给部署者，考虑了小数位
     }
 
     modifier onlyManager() {
@@ -25,5 +25,10 @@ contract USDCToken is ERC20, Ownable {
 
     function changeManager(address newManager) public onlyOwner {
         manager = newManager;
+    }
+
+    // 获取管理员
+    function getManager() public view returns () {
+        return manager;
     }
 }

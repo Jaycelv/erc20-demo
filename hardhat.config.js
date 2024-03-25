@@ -9,15 +9,15 @@ module.exports = {
   },
   networks: {
     optimism: {
-      url: `https://sepolia.optimism.io`,
+      url: `https://public.stackup.sh/api/v1/node/optimism-sepolia`,
       accounts: {
-        mnemonic: "jelly infant furnace decrease dolphin member quantum hawk segment coral witness someone"
+        mnemonic: "case garage era option frame radio devote inside blame small laugh assault"
       }
     },
     base: {
       url: `https://sepolia.base.org`,
       accounts: {
-        mnemonic: "jelly infant furnace decrease dolphin member quantum hawk segment coral witness someone"
+        mnemonic: "case garage era option frame radio devote inside blame small laugh assault"
       }
     },
   },
