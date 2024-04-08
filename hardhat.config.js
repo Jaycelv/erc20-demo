@@ -9,16 +9,12 @@ module.exports = {
   },
   networks: {
     optimism: {
-      url: `https://public.stackup.sh/api/v1/node/optimism-sepolia`,
-      accounts: {
-        mnemonic: "case garage era option frame radio devote inside blame small laugh assault"
-      }
+      url: `https://sepolia.optimism.io`,
+      accounts: ['a52fc008b14875cbadcc46e619cf2382f60a3c0f42786691151bda9f2ba26aee']
     },
     base: {
       url: `https://sepolia.base.org`,
-      accounts: {
-        mnemonic: "case garage era option frame radio devote inside blame small laugh assault"
-      }
+      accounts: ['a52fc008b14875cbadcc46e619cf2382f60a3c0f42786691151bda9f2ba26aee']
     },
   },
 };

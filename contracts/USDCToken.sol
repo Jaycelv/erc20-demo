@@ -27,8 +27,7 @@ contract USDCToken is ERC20, Ownable {
         manager = newManager;
     }
 
-    // 获取管理员
-    function getManager() public view returns () {
+    function getManager() public view returns (address) {
         return manager;
     }
 }
